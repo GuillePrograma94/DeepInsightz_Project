@@ -728,8 +728,8 @@ elif page == "🕵️ Análisis de Cliente":
 # Customer Recommendations Page
 elif page == "💡 Recomendación de Artículos":
     # Carga de CSV necesarios cestas y productos
-    cestas = pd.read_csv('cestas.csv') 
-    productos = pd.read_csv('productos.csv')
+    cestas = pd.read_csv('webapp/cestas.csv') 
+    productos = pd.read_csv('webapp/productos.csv')
     
     # Estilo principal de la página
     st.markdown(
