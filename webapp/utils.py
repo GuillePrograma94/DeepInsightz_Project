@@ -12,9 +12,9 @@ from sklearn.preprocessing import normalize
 
 def recomienda_tf(new_basket,cestas,productos): 
     # Cargar la matriz TF y el modelo
-    tf_matrix = load('tf_matrix.joblib')
+    tf_matrix = load('webapp/tf_matrix.joblib')
                       
-    count = load('count_vectorizer.joblib')
+    count = load('webapp/count_vectorizer.joblib')
     # Convertir la nueva cesta en formato TF (Term Frequency)
     new_basket_str = ' '.join(new_basket)
     new_basket_vector = count.transform([new_basket_str])
