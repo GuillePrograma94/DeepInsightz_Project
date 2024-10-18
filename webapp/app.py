@@ -326,7 +326,7 @@ elif page == "🕵️ Análisis de Cliente":
 
             with st.spinner("Preparando los datos..."):
                 # Load predict data for that cluster
-                predict_data = pd.read_csv(f'predicts/predict_cluster_{cluster}.csv')
+                predict_data = pd.read_csv(f'webapp/predicts/predict_cluster_{cluster}.csv')
                 
                 # Convert cliente_id to string
                 predict_data['cliente_id'] = predict_data['cliente_id'].astype(str)
