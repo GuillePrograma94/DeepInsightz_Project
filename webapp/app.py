@@ -61,18 +61,18 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # Load CSV files at the top
-df = pd.read_csv("df_clean.csv")
-nombres_proveedores = pd.read_csv("nombres_proveedores.csv", sep=';')
-euros_proveedor = pd.read_csv("euros_proveedor.csv", sep=',')
-ventas_clientes = pd.read_csv("ventas_clientes.csv", sep=',')
-customer_clusters = pd.read_csv('predicts/customer_clusters.csv')  # Load the customer clusters here
-df_agg_2024 = pd.read_csv('predicts/df_agg_2024.csv')
-pca_data_5 = pd.read_csv('pca_data.csv')
-historical_data = pd.read_csv('historical_data.csv')
+df = pd.read_csv("webapp/df_clean.csv")
+nombres_proveedores = pd.read_csv("webapp/nombres_proveedores.csv", sep=';')
+euros_proveedor = pd.read_csv("webapp/euros_proveedor.csv", sep=',')
+ventas_clientes = pd.read_csv("webapp/ventas_clientes.csv", sep=',')
+customer_clusters = pd.read_csv('webapp/predicts/customer_clusters.csv')  # Load the customer clusters here
+df_agg_2024 = pd.read_csv('webapp/predicts/df_agg_2024.csv')
+pca_data_5 = pd.read_csv('webapp/pca_data.csv')
+historical_data = pd.read_csv('webapp/historical_data.csv')
 
 
 with st.sidebar:
-    st.image("logo/logo.png", use_column_width=True)
+    st.image("webapp/logo/logo.png", use_column_width=True)
     page = st.sidebar.selectbox("Selecciona la herramienta que quieres utilizar...", ["📃 Resumen", "🕵️ Análisis de Cliente", "💡 Recomendación de Artículos"])
 
 # Generamos la columna total_sales
