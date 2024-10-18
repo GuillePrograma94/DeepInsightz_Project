@@ -90,8 +90,8 @@ nombres_proveedores['codigo'] = nombres_proveedores['codigo'].astype(str)
 euros_proveedor['CLIENTE'] = euros_proveedor['CLIENTE'].astype(str)
 customer_clusters['cliente_id'] = customer_clusters['cliente_id'].astype(str)  # Ensure customer IDs are strings
 fieles_df = pd.read_csv("webapp/clientes_relevantes.csv")
-cestas = pd.read_csv("cestas.csv")
-productos = pd.read_csv("productos.csv")
+cestas = pd.read_csv("webapp/cestas.csv")
+productos = pd.read_csv("webapp/productos.csv")
 df_agg_2024['cliente_id'] = df_agg_2024['cliente_id'].astype(str)
 marca_id_mapping = load('marca_id_mapping.joblib')
 
