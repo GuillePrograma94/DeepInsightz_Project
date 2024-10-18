@@ -93,7 +93,7 @@ fieles_df = pd.read_csv("webapp/clientes_relevantes.csv")
 cestas = pd.read_csv("webapp/cestas.csv")
 productos = pd.read_csv("webapp/productos.csv")
 df_agg_2024['cliente_id'] = df_agg_2024['cliente_id'].astype(str)
-marca_id_mapping = load('marca_id_mapping.joblib')
+marca_id_mapping = load('webapp/marca_id_mapping.joblib')
 
 # Convert all columns except 'CLIENTE' to float in euros_proveedor
 for col in euros_proveedor.columns:
