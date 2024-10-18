@@ -321,7 +321,7 @@ elif page == "🕵️ Análisis de Cliente":
                 
             with st.spinner(f"Seleccionando el modelo predictivo..."):
                 # Load the Corresponding Model
-                model_path = f'models/modelo_cluster_{cluster}.txt'
+                model_path = f'webapp/models/modelo_cluster_{cluster}.txt'
                 gbm = lgb.Booster(model_file=model_path)
 
             with st.spinner("Preparando los datos..."):
